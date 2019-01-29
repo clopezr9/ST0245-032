@@ -18,8 +18,8 @@ public class TombRaider
     public TombRaider(double x1, double y1)
     {
         // initialise instance variables
-        x1 = x;
-        y1 = y;
+        this.x1 = x;
+        this.y1 = y;
     }
     
     public double x()

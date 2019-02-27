@@ -33,7 +33,7 @@ public class MiArrayList {
      *
      * El size esta influenciado por las funciones add y del
      */
-    public int size() {
+    public int size() {     // T(n)=k
         return size; 
     }   
 
@@ -42,7 +42,7 @@ public class MiArrayList {
      * Agrega un elemento e a la última posición de la lista
      *
      */
-    public void add(int e) {
+    public void add(int e) {     _//T(n)= n + k
         elements[size]=e;
         size++;
         if(size==elements.length)
@@ -54,7 +54,7 @@ public class MiArrayList {
      * Retorna el elemento que se encuentra en la posición i de la lista.
      *
      */
-    public int get(int i) throws ArrayIndexOutOfBoundsException{
+    public int get(int i) throws ArrayIndexOutOfBoundsException{    // T(n)=k
         if (i < 0 || i >= size)
             throw new ArrayIndexOutOfBoundsException("Usuario i = " + i + " ,pero size = " + size+ " ojo con lo que pone");
         else
@@ -67,7 +67,7 @@ public class MiArrayList {
      * Agrega un elemento e en la posición index de la lista
      *
      */
-    public void add(int index, int e) {
+    public void add(int index, int e) {        //T(n)= 2n
         if(index >= 0 && index<elements.length && size+1<=elements.length){
             int saven = 0, saven2;
             saven = elements[index];
@@ -98,12 +98,12 @@ public class MiArrayList {
      * ELimina el elemento  en la posición index de la lista
      *
      */
-    public void del(int index){
+    public void del(int index){      //T(n)= k
         elements[index]=0;
         size--;
     }
 
-    public void Ampliar(){
+    public void Ampliar(){          //T(n)=n
         int [] elements2 = new int [size*2];
         for(int j=0; j < elements.length; j++){
             elements2[j]=elements[j];

@@ -42,7 +42,7 @@ public class MiArrayList {
      * Agrega un elemento e a la última posición de la lista
      *
      */
-    public void add(int e) {     _//T(n)= n + k
+    public void add(int e) {     //T(n)= n + k
         elements[size]=e;
         size++;
         if(size==elements.length)

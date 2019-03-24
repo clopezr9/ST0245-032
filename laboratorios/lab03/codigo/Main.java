@@ -36,6 +36,17 @@ public class Main
         return s;
     }
 
+       public static String readGrade(String line){
+        String [] r = line.split(",");
+        String s = "";
+        try{
+            s = r[14];
+        } catch (NumberFormatException e){
+            System.out.println("Los datos no estan en el formato requerido");
+        }
+        return s;
+    }
+
 
     public static void printStudents( ){
         for(int i = 0; i<students.size(); i++){

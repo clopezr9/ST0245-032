@@ -4,15 +4,15 @@ import java.util.List;
 
 public class Subjects {
     
-    public int code;
+    public String code;
     public int grade;
     
-   public Subject (int code, int grade){
+   public Subject (String code, int grade){
         this.grade= grade;
         this.code = code;
    }
   
-   public int getCode(){
+   public String getCode(){
         return code;
    }
     

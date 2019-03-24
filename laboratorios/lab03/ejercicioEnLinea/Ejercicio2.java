@@ -1,13 +1,11 @@
 import java.util.*;
 import java.util.LinkedList;
 
-public class Ejercicio2
+public class Ejercicio2Listas
 {
-    public static void correction(String texto){
+    public static void maquinaDeEscribir(String texto){
 
         LinkedList <String> lista = new LinkedList();
-        LinkedList <String> melo = new LinkedList();
-
         String inicio = "";
         String end = "";
         int cont = 0;

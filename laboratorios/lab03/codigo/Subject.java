@@ -17,6 +17,7 @@ public class Subjects {
    }
     
     public int getGrade(){
+        grade = readGrade();
         return grade;
     }
 }

@@ -9,9 +9,10 @@ import javafx.util.*;
  */
 public class Main
 {
-    //public static ArrayList<LinkedList<Student>> all = new ArrayList<>();
+   
     public static LinkedList<Student> students = new LinkedList<>();
     public static String archive;
+    public ArrayList<Subject> subjects = new ArrayList<>();
 
     public static Student createStudent(String line){
         String [] l = line.split(",");
